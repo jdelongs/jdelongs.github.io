@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
 
     $subject = "Job Opening";
     $subject2 = "Copy of your form submission";
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
 
     $headers = "From:" . $from;
     mail($to,$subject,$message,$headers);
