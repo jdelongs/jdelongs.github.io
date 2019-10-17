@@ -536,18 +536,18 @@ ul.borderXwidth a:hover:after {
     text-align: center
 }
 
-.card__price-box {
+.card__link-box {
     text-align: center;
     color: #fff;
     margin-bottom: 8rem
 }
 
-.card__price-only {
+.card__link-text {
     font-size: 2rem;
     text-transform: uppercase
 }
 
-.card__price-value {
+.card__link {
     font-size: 4rem;
     font-weight: 100
 }
@@ -683,10 +683,10 @@ only screen and (hover: none) {
         width: 100%;
         padding: 7rem 4rem 4rem 4rem
     }
-    .card__price-box {
+    .card__link-box {
         margin-bottom: 3rem
     }
-    .card__price-value {
+    .card__link {
         font-size: 4rem
     }
 }
