@@ -324,7 +324,7 @@ ul.borderXwidth a:hover:after {
 
 /* skills paragraph content and contents icon size*/
 
-.skills-paragraph_icon {
+.skills_paragraph-icon {
     height: 11.5rem;
     width: 11.5rem;
     margin-bottom: 1rem;
@@ -335,7 +335,7 @@ ul.borderXwidth a:hover:after {
     margin-bottom: 1rem;
 }
 
-.skill_box {
+.skills_box {
     font-size: 1.7rem;
     padding: 0 1.5rem 2rem 1.5rem;
 }
@@ -452,7 +452,7 @@ ul.borderXwidth a:hover:after {
     font-size: 2rem;
 }
 
-.card__side {
+.card_side {
     height: 52rem;
     -webkit-transition: all .8s ease;
     transition: all .8s ease;
@@ -468,46 +468,46 @@ ul.borderXwidth a:hover:after {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
-.card__side--front {
+.card_side-front {
     background-image: linear-gradient(315deg, rgba(182, 193, 255, 0.51), rgba(8, 0, 116, 0.03));
 }
 
-.card__side--back {
+.card_side-back {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     background-image: linear-gradient(to right bottom, #2998ff, #5643fa)
 }
 
-.card:hover .card__side--front {
+.card:hover .card_side-front {
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg)
 }
 
-.card:hover .card__side--back {
+.card:hover .card_side-back {
     -webkit-transform: rotateY(0);
     transform: rotateY(0)
 }
 
-.card__picture {
+.card_picture {
     background-size: cover;
     height: 16rem;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px
 }
 
-.card__picture--1 {
+.card_picture-1 {
     background-image: url(../img/devconnect.png)
 }
 
-.card__picture--2 {
+.card_picture-2 {
     background-image: url(../img/budgetary.PNG)
 }
 
-.card__picture--3 {
+.card_picture-3 {
     background-image: url(../img/weather.PNG)
 }
 
-.card__heading {
+.card_heading {
     color: white;
     width: 100%;
     z-index: 4;
@@ -517,16 +517,16 @@ ul.borderXwidth a:hover:after {
     clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
 }
 
-.card__description-container {
+.card_description-container {
     padding: 2rem;
     text-align: center;
 }
 
-.card__description {
+.card_description {
     font-size: 1.7rem;
 }
 
-.card__cta {
+.card_cta {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -536,18 +536,18 @@ ul.borderXwidth a:hover:after {
     text-align: center
 }
 
-.card__link-box {
+.card_link-box {
     text-align: center;
     color: #fff;
     margin-bottom: 8rem
 }
 
-.card__link-text {
+.card_link-text {
     font-size: 2rem;
     text-transform: uppercase
 }
 
-.card__link {
+.card_link {
     font-size: 4rem;
     font-weight: 100
 }
@@ -651,30 +651,30 @@ only screen and (hover: none) {
         -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15)
     }
-    .card__side {
+    .card_side {
         height: auto;
         position: relative;
         -webkit-box-shadow: none;
         box-shadow: none
     }
-    .card__side--front {
+    .card_side-front {
         padding-bottom: 6rem;
         margin-bottom: -8rem;
     }
-    .card__side--back {
+    .card_side-back {
         -webkit-transform: rotateY(0);
         transform: rotateY(0);
         -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%)
     }
-    .card:hover .card__side--front {
+    .card:hover .card_side-front {
         -webkit-transform: rotateY(0);
         transform: rotateY(0)
     }
-    .card__details {
+    .card_details {
         padding: 1rem 3rem
     }
-    .card__cta {
+    .card_cta {
         position: relative;
         top: 0%;
         left: 0;
@@ -683,15 +683,21 @@ only screen and (hover: none) {
         width: 100%;
         padding: 7rem 4rem 4rem 4rem
     }
-    .card__link-box {
+    .card_link-box {
         margin-bottom: 3rem
     }
-    .card__link {
+    .card_link {
         font-size: 4rem
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 550px),
+only screen and (hover: none) {
+    /* nav responsive styles */
+    ul.borderXwidth a:before,
+    ul.borderXwidth a:after {
+        position: static;
+    }
     /* skills responsive styles */
     .skills_container {
         flex-direction: column;
