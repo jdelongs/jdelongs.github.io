@@ -213,7 +213,6 @@ body {
     position: fixed;
     top: 0;
     background: #262833;
-    border-bottom: none;
     transition: background 0.5s;
 }
 
