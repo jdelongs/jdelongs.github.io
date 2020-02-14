@@ -19,15 +19,34 @@
 </head>
 
 <body>
+
     <header id="header" class="header">
+
         <nav class="navigation" id="navigation">
-            <h1 class="logo">J</h1>
+            <img src="./img/logo.png" class="logo">
             <ul class="navigation_list borderXwidth">
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact-form">Contact Me</a></li>
             </ul>
         </nav>
+        <div class="nav-mobile">
+
+            <input type="checkbox" class="nav-mobile_checkbox" id="nav-mobile_checkbox">
+            <label for="nav-mobile_checkbox" class="nav-mobile_btn">
+                <span class="nav-mobile_icon">&nbsp;</span>
+            </label>
+            <div class="nav-mobile_background">
+                <img src="./img/logo.png" class="logo">&nbsp;</div>
+            <nav class="nav-mobile_nav" id="nav-mobile_nav">
+                <ul class="nav-mobile_list" id="nav-mobile_list">
+                    <li class="nav-mobile_item"><a href="#skills" class="nav-mobile_link">Skills</a></li>
+                    <li class="nav-mobile_item"><a href="#projects" class="nav-mobile_link">Projects</a></li>
+                    <li class="nav-mobile_item"><a href="#contact-form" class="nav-mobile_link">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <div class="landing_container">
             <h1 class="heading_primary text_white">John Delong</h1>
             <div class="social_container">
@@ -49,7 +68,7 @@
 
                 <div class="skills_box">
                     <img src="./img/front-end.png" class="skills_paragraph-icon" alt="Front End Icon">
-                    <h3 class="skills_title">Front End Development</h3>
+                    <h3 class="skills_title">FrontEnd Development</h3>
                     <p class="skills_text">
                         Frontend development has been my main focus and passion. I have experience developing projects in Vanilla Javascript, React with Redux(React is my focus), Angular, and using both CSS and SASS for styling. I also have experience creating responsive sites
                         with Flexbox, CSS grid, and Float layouts.
@@ -58,10 +77,10 @@
 
                 <div class="skills_box">
                     <img src="./img/backend.png" class="skills_paragraph-icon" alt="Back End Icon">
-                    <h3 class="skills_title">Back End & Databases</h3>
+                    <h3 class="skills_title">BackEnd & Databases</h3>
                     <p class="skills_text">
-                        Development experience building RESTapis with Node and Express. Solid OOP foundation and Java application development with JavaFX and testing with Junit. Practical knowledge integrating MongoDB and MySQL in a variety of applications as well as developing
-                        optimized MySQL queries.
+                        Development experience building RESTapis with Node and Express. Solid OOP foundation and Java application development with JavaFX and experience unit testing with Junit. Practical knowledge integrating MongoDB and MySQL in a variety of applications as
+                        well as developing optimized MySQL queries.
                     </p>
                 </div>
             </div>
