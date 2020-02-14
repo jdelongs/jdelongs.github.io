@@ -143,11 +143,6 @@ body {
 
 /* button styles */
 
-.btn_primary:hover .arrow-icon {
-    animation-name: bounce;
-    animation-duration: 1s;
-}
-
 .btn {
     margin: 0 0 1.5rem 0;
 }
@@ -163,22 +158,31 @@ body {
     font-size: 1.7rem;
     border: none;
     background-color: #fff;
-    color: #28a0b6;
+    color: rgb(51, 102, 153);
     cursor: pointer;
     font-family: inherit;
 }
 
 .btn_primary:hover {
-    background-color: rgb(231, 224, 224);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    transform: translateY(2px);
+    background-color: #28a0b6;
+    color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+.btn_primary:active {
+    transform: translateY(.3rem);
+}
+
+.btn_primary:hover .arrow-icon {
+    animation-name: bounce;
+    animation-duration: 1s;
 }
 
 
 /* HEADER STYLES */
 
 .header {
-    background: linear-gradient(315deg, rgba(182, 193, 255, 0.51), rgba(8, 0, 116, 0.79)), url('../img/showcase.jpg') no-repeat center center/cover;
+    background: linear-gradient(315deg, rgba(182, 193, 255, 0.51), rgba(8, 0, 116, 0.79)), url('../img/background.jpg') no-repeat center center/cover;
     position: relative;
     height: 100vh;
 }
@@ -194,7 +198,7 @@ body {
     cursor: default;
 }
 
-.navigation_nav {
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -203,13 +207,19 @@ body {
     z-index: 1;
     width: 100%;
     top: 0;
-    background: #2628338f;
     animation-name: move-in-top;
     animation-duration: 1s;
+    border-bottom: #fff solid 2px;
+    transition: background 0.5s;
 }
 
-
-/* header nav hover styles */
+.sticky {
+    position: fixed;
+    top: 0;
+    background: #262833;
+    border-bottom: none;
+    transition: background 0.5s;
+}
 
 .navigation_list {
     display: flex;
@@ -308,7 +318,7 @@ ul.borderXwidth a:hover:after {
 /* SKILLS SECTION */
 
 .skills {
-    background: rgb(25, 144, 255);
+    background: rgb(51, 102, 153);
     text-align: left;
     color: white;
 }
@@ -366,46 +376,9 @@ ul.borderXwidth a:hover:after {
     width: 3.5rem;
 }
 
-.js-icon {
-    animation-name: fade-in;
-    animation-duration: 1s;
-}
-
-.react-icon {
-    animation-name: fade-in;
-    animation-duration: 1.3s;
-}
-
-.angular-icon {
-    animation-name: fade-in;
-    animation-duration: 1.6s;
-}
-
-.css-icon {
-    animation-name: fade-in;
-    animation-duration: 1.9s;
-}
-
-.sass-icon {
-    animation-name: fade-in;
-    animation-duration: 2.2s;
-}
-
-.html-icon {
-    animation-name: fade-in;
-    animation-duration: 2.5s;
-}
-
-.node-icon {
-    animation-name: fade-in;
-    animation-duration: 2.8s;
-}
-
 .java-icon {
     height: 3.5rem;
     width: 3rem;
-    animation-name: fade-in;
-    animation-duration: 3.1s;
 }
 
 
@@ -475,7 +448,7 @@ ul.borderXwidth a:hover:after {
 .card_side-back {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
-    background-image: linear-gradient(to right bottom, #2998ff, #5643fa)
+    background-color: #28a0b6;
 }
 
 .card:hover .card_side-front {
@@ -513,7 +486,7 @@ ul.borderXwidth a:hover:after {
     z-index: 4;
     text-align: center;
     padding: .5rem 0 .5rem 0;
-    background-image: linear-gradient(to right bottom, rgba(25, 144, 255, 0.7), rgba(8, 0, 116, .7));
+    background-color: #28a0b6;
     clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
 }
 
@@ -556,7 +529,7 @@ ul.borderXwidth a:hover:after {
 /* CONTACT FORM */
 
 .contact-form {
-    background: linear-gradient(to right bottom, rgb(80, 118, 202), rgb(25, 144, 255));
+    background-color: rgb(51, 102, 153);
 }
 
 form {
@@ -597,7 +570,6 @@ label {
 
 footer {
     background-color: #333;
-    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
     margin-top: -19.6rem;
 }
 
@@ -704,12 +676,13 @@ only screen and (hover: none) {
     }
     /* header responsive styles */
     .heading_primary {
+        font-size: 5rem;
         animation: none;
         white-space: normal;
     }
     .navigation_nav {
         display: initial;
-        padding: 1rem 0rem 2rem 0rem;
+        padding: 2rem 0rem 2rem 0rem;
         text-align: center;
     }
     .logo {

@@ -14,17 +14,15 @@
             document.getElementsByTagName('head')[0].appendChild(css);
         })();
     </script>
-
     <link rel="stylesheet" href="./styles/styles.css" type="text/css" />
     <title>John Delong | Portfolio</title>
 </head>
 
 <body>
     <header id="header" class="header">
-        <nav class="navigation_nav">
+        <nav class="navigation" id="navigation">
             <h1 class="logo">J</h1>
             <ul class="navigation_list borderXwidth">
-                <li><a class="#header" href="">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact-form">Contact Me</a></li>
@@ -53,8 +51,8 @@
                     <img src="./img/front-end.png" class="skills_paragraph-icon" alt="Front End Icon">
                     <h3 class="skills_title">Front End Development</h3>
                     <p class="skills_text">
-                        Frontend development has been my main focus and passion. I have experience developing projects in Vanilla Javascript, React and Angular. Developed websites and apps using HTML, CSS, SASS and SCSS. In addition I have built sites from the ground up with
-                        using WordPress.
+                        Frontend development has been my main focus and passion. I have experience developing projects in Vanilla Javascript, React with Redux(React is my focus), Angular, and using both CSS and SASS for styling. I also have experience creating responsive sites
+                        with Flexbox, CSS grid, and Float layouts.
                     </p>
                 </div>
 
@@ -62,27 +60,25 @@
                     <img src="./img/backend.png" class="skills_paragraph-icon" alt="Back End Icon">
                     <h3 class="skills_title">Back End & Databases</h3>
                     <p class="skills_text">
-                        Development experience building REST APIs with Node and Express. Solid OOP foundation and Java application development with JavaFX and testing with Junit. Practical knowledge integrating MongoDB and MySQL in a variety of applications as well as developing
+                        Development experience building RESTapis with Node and Express. Solid OOP foundation and Java application development with JavaFX and testing with Junit. Practical knowledge integrating MongoDB and MySQL in a variety of applications as well as developing
                         optimized MySQL queries.
                     </p>
                 </div>
             </div>
             <div class="dark-overlay">
-                <div class="tech-icon_container">
-                    <img src="./img/javascript-icon.png" alt="JavaScript" class="js-icon">
-                    <img src="./img/React-logo.png" class="react-icon" />
-                    <img src="./img/angular-icon-1.svg" class="angular-icon" alt="Angular">
-                    <img src="./img/badge-css.png" class="css-icon" alt="CSS" />
+                <div class="tech-icon_container" id="tech-icon">
+                    <img src="./img/javascript-icon.png" alt="JavaScript" class="js-icon icon-animate">
+                    <img src="./img/React-logo.png" class="react-icon icon-animate" />
+                    <img src="./img/angular-icon-1.svg" class="angular-icon icon-animate" alt="Angular">
+                    <img src="./img/badge-css.png" class="css-icon icon-animate" alt="CSS" />
                     <img src="./img/sass.svg" class="sass-icon" alt="SASS" />
-                    <img src="./img/html-icon.svg" class="html-icon" alt="html" />
-                    <img src="./img/node-icon.svg" class="node-icon" alt="Node" />
-                    <img src="./img/java-logo.png" class="java-icon" alt="Java" />
+                    <img src="./img/html-icon.svg" class="html-icon icon-animate" alt="html" />
+                    <img src="./img/node-icon.svg" class="node-icon icon-animate" alt="Node" />
+                    <img src="./img/java-logo.png" class="java-icon icon-animate" alt="Java" />
                 </div>
         </section>
         <section id="projects" class="projects">
             <h2 class="section_heading">Projects</h2>
-            <!-- <!_ projects should have a link to live site and github _> -->
-
             <div class="row">
                 <div class="col-1-of-3">
                     <div class="card">
@@ -137,11 +133,6 @@
                                     <a href="https://github.com/jdelongs/react-weather-app" target="_blank" class="social_links"><i
                                         class="fab fa-github"></i></a>
                                 </div>
-                                <!-- <div class="card_link-box">
-                                   <p class="card_link-text">Live Site</p>
-                                    <a href="https://github.com/jdelongs/react-weather-app" target="_blank" class="social_links"><i class="far fa-window-restore"></i><i
-                                        class="fab fa-github"></i></a>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -170,10 +161,6 @@
                                         <i class="fab fa-github"></i>
                                     </a>
                                 </div>
-                                <!-- <div class="card_link-box">
-                                    <p class="card_link-text">Live Site</p>
-                                    <p class="card_link">$497</p>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -188,14 +175,14 @@
                     <input id="name" placeholder="Name" name="name" type="text" class="contact-form_input" />
                     <input id="email" placeholder="Email" name="from" type="text" class="contact-form_input" />
                     <textarea class="contact-form_input" name="body" placeholder="Message..." ame="textarea_message" id="" cols="30" rows="10"></textarea>
-                    <button type="submit" name="submit" class="btn btn_primary">Submit</button>
+                    <button type="submit" name="submit" class="btn btn_primary">Send</button>
                 </div>
             </form>
         </section>
     </main>
     <footer>
         <div class="footer_container">
-            <p class="footer_copywright-text">Copywright&copy; John Delong 2019</p>
+            <p class="footer_copywright-text">&copy; John Delong 2019</p>
             <h4>Social Links</h4>
             <div class="social_container footer_social-container">
                 <a href="https://github.com/jdelongs" target="_blank" class="social_links"><i
@@ -206,6 +193,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
