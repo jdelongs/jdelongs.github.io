@@ -665,6 +665,13 @@ only screen and (hover: none) {
 
 @media only screen and (max-width: 550px),
 only screen and (hover: none) {
+    .navigation {
+        display: inline-block;
+        padding: 2.5rem;
+    }
+    .logo {
+        display: none;
+    }
     /* nav responsive styles */
     ul.borderXwidth a:before,
     ul.borderXwidth a:after {
