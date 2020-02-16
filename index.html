@@ -19,9 +19,9 @@
 </head>
 
 <body>
-
+    <!-- start of header -->
     <header class="header" id="header">
-
+        <!-- start of desktop nav -->
         <nav class="navigation" id="navigation">
             <img src="./img/logo.png" class="logo">
             <ul class="navigation_list borderXwidth">
@@ -30,8 +30,9 @@
                 <li><a href="#contact-form">Contact Me</a></li>
             </ul>
         </nav>
+        <!-- end of desktop nav -->
+        <!-- start of mobile nav -->
         <div class="nav-mobile">
-
             <input type="checkbox" class="nav-mobile_checkbox" id="nav-mobile_checkbox">
             <label for="nav-mobile_checkbox" class="nav-mobile_btn">
                 <span class="nav-mobile_icon">&nbsp;</span>
@@ -46,7 +47,8 @@
                 </ul>
             </nav>
         </div>
-
+        <!-- end of mobile nav -->
+        <!-- start of landing section -->
         <div class="landing_container">
             <h1 class="heading_primary text_white">John Delong</h1>
             <div class="social_container">
@@ -60,148 +62,188 @@
                     <span class="margin-left">Resume</span></a>
             </div>
         </div>
+        <!-- end of landing section -->
     </header>
-    <main>
-        <section id="skills" class="skills">
-            <h2 class="section_heading skills_heading">Skills</h2>
-            <div class="skills_container">
-
-                <div class="skills_box">
-                    <img src="./img/front-end.png" class="skills_paragraph-icon" alt="Front End Icon">
-                    <h3 class="skills_title">FrontEnd Development</h3>
-                    <p class="skills_text">
-                        Frontend development has been my main focus and passion. I have experience developing projects in Vanilla Javascript, React with Redux(React is my focus), Angular, and using both CSS and SASS for styling. I also have experience creating responsive sites
-                        with Flexbox, CSS grid, and Float layouts.
-                    </p>
-                </div>
-
-                <div class="skills_box">
-                    <img src="./img/backend.png" class="skills_paragraph-icon" alt="Back End Icon">
-                    <h3 class="skills_title">BackEnd & Databases</h3>
-                    <p class="skills_text">
-                        Development experience building RESTapis with Node and Express. Solid OOP foundation and Java application development with JavaFX and experience unit testing with Junit. Practical knowledge integrating MongoDB and MySQL in a variety of applications as
-                        well as developing optimized MySQL queries.
-                    </p>
-                </div>
+    <!-- end of header -->
+    <!-- start of skills section -->
+    <section id="skills" class="skills">
+        <h2 class="section_heading skills_heading margin-left">Skills</h2>
+        <div class="skills_container">
+            <div class="skills_box">
+                <img src="./img/front-end.png" class="skills_paragraph-icon" alt="Front End Icon">
+                <h3 class="skills_title">FrontEnd Development</h3>
+                <p class="skills_text">
+                    Frontend development has been my main focus and passion. I have experience developing projects in Vanilla Javascript, React with Redux(React is my focus), Angular, and using both CSS and SASS for styling. I also have experience creating responsive sites
+                    with Flexbox, CSS grid, and Float layouts.
+                </p>
             </div>
-            <div class="dark-overlay">
-                <div class="tech-icon_container" id="tech-icon">
-                    <img src="./img/javascript-icon.png" alt="JavaScript" class="js-icon icon-animate">
-                    <img src="./img/React-logo.png" class="react-icon icon-animate" />
-                    <img src="./img/angular-icon-1.svg" class="angular-icon icon-animate" alt="Angular">
-                    <img src="./img/badge-css.png" class="css-icon icon-animate" alt="CSS" />
-                    <img src="./img/sass.svg" class="sass-icon" alt="SASS" />
-                    <img src="./img/html-icon.svg" class="html-icon icon-animate" alt="html" />
-                    <img src="./img/node-icon.svg" class="node-icon icon-animate" alt="Node" />
-                    <img src="./img/java-logo.png" class="java-icon icon-animate" alt="Java" />
-                </div>
-        </section>
-        <section id="projects" class="projects">
+            <div class="skills_box">
+                <img src="./img/backend.png" class="skills_paragraph-icon" alt="Back End Icon">
+                <h3 class="skills_title">BackEnd & Databases</h3>
+                <p class="skills_text">
+                    Development experience building RESTapis with Node and Express. Solid OOP foundation and Java application development with JavaFX and experience unit testing with Junit. Practical knowledge integrating MongoDB and MySQL in a variety of applications as
+                    well as developing optimized MySQL queries.
+                </p>
+            </div>
+        </div>
+        <div class="tech-icon dark-overlay">
+            <div class="tech-icon_container" id="tech-icon">
+                <img src="./img/javascript-icon.png" alt="JavaScript" class="js-icon">
+                <img src="./img/React-logo.png" class="react-icon" />
+                <img src="./img/angular-icon-1.svg" class="angular-icon" alt="Angular">
+                <img src="./img/badge-css.png" class="css-icon" alt="CSS" />
+                <img src="./img/sass.svg" class="sass-icon" alt="SASS" />
+                <img src="./img/html-icon.svg" class="html-icon" alt="html" />
+                <img src="./img/node-icon.svg" class="node-icon" alt="Node" />
+                <img src="./img/java-logo.png" class="java-icon" alt="Java" />
+            </div>
+    </section>
+    <!-- end of skills section -->
+    <!-- start of project section -->
+    <!-- start of project section -->
+    <section id="projects" class="projects">
+        <div class="projects_container">
             <h2 class="section_heading">Projects</h2>
             <div class="row">
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card_side card_side-front">
-                            <div class="card_picture card_picture-1">
-                                &nbsp;
-                            </div>
-                            <h4 class="card_heading">
-                                <span class="card_heading-span card_heading-span-1">DevConnect</span>
-                            </h4>
-                            <div class="card_description-container">
-                                <p class="card_description">
-                                    FullStack social media site geared toward developers built with the MERN stack. This app has user authentication, allows the user to set up a profile, create posts, like and comment on other users posts.This app also interacts with the Github API to get
-                                    users repositories.
-                                </p>
-                            </div>
+                <div class="card">
+                    <img src="./img/devconnect.jpg" alt="DevConnect" class="card_picture">
+                    <h4 class="card_heading">
+                        <span class="card_heading-span">DevConnect</span>
+                    </h4>
+                    <div class="card_description-container">
+                        <p class="card_description">
+                            FullStack social media site geared toward developers built with the MERN stack. This app has user authentication, allows the user to set up a profile, create posts, like and comment on other users posts.This app also interacts with the Github API to get
+                            users repositories.
+                        </p>
+                    </div>
+                    <div class="card_project-links">
+                        <div class="card_project-links-box">
+                            <p class="card_link-text">Github</p>
+                            <a href="https://github.com/jdelongs/DevConnect" target="_blank" class="social_links"><i
+                                            class="fab fa-github"></i></a>
                         </div>
-                        <div class="card_side card_side-back card_side-back-1">
-                            <div class="card_cta">
-                                <div class="card_link-box">
-                                    <p class="card_link-text">Github</p>
-                                    <a href="https://github.com/jdelongs/DevConnect" target="_blank" class="social_links"><i
-                                        class="fab fa-github"></i></a>
-                                </div>
-                                <div class="card_link-box">
-                                    <p class="card_link-text">Live Site</p>
-                                    <a href="https://whispering-ravine-66238.herokuapp.com/" target="_blank" class="social_links"><i class="far fa-window-restore"></i></a>
-                                </div>
-                            </div>
+                        <div class="card_project-links-box">
+                            <p class="card_link-text">Live Site</p>
+                            <a href="https://whispering-ravine-66238.herokuapp.com/" target="_blank" class="social_links"><i class="far fa-window-restore"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card_side card_side-front">
-                            <div class="card_picture card_picture-2">
-                                &nbsp;
-                            </div>
-                            <h4 class="card_heading">
-                                <span class="card_heading-span card_heading-span-2">Budgetary</span>
-                            </h4>
-                            <div class="card_description-container">
-                                <p class="card_description">
-                                    Vanilla JavaScript budget app. Users can input their income, expenses, and does some computations based on this data. An Example of this is that the app displays the percentage of your income spent on both individual expenses and all expenses.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card_side card_side-back card_side-back-2">
-                            <div class="card_cta">
-                                <div class="card_link-box">
-                                    <p class="card_link-text">Github</p>
-                                    <a href="https://github.com/jdelongs/react-weather-app" target="_blank" class="social_links"><i
-                                        class="fab fa-github"></i></a>
-                                </div>
-                            </div>
+                <div class="card">
+                    <img src="./img/budgetary.PNG" alt="DevConnect" class="card_picture">
+                    <h4 class="card_heading">
+                        <span class="card_heading-span">Budgetary</span>
+                    </h4>
+                    <div class="card_description-container">
+                        <p class="card_description">
+                            Vanilla JavaScript budget app. Users can input their income, expenses, and does some computations based on this data. An Example of this is that the app displays the percentage of your income spent on both individual expenses and all expenses.
+                        </p>
+                    </div>
+                    <div class="card_project-links">
+                        <div class="card_project-links-box">
+                            <p class="card_link-text">Github</p>
+                            <a href="https://github.com/jdelongs/budget-tracking" target="_blank" class="social_links"><i
+                                            class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card_side card_side-front">
-                            <div class="card_picture card_picture-3">
-                                &nbsp;
-                            </div>
-                            <h4 class="card_heading">
-                                <span class="card_heading-span card_heading-span-3">Weather App</span>
-                            </h4>
-                            <div class="card_description-container">
-                                <p class="card_description">
-                                    React app that allows a user to search for the weather in any city in Canada and uses Redux for state management. Uses two APIs, google maps for displaying a map of the city and the openweathermap for getting the weather of the qeuried city. This app
-                                    also displays the weather in a graph format.
-                                </p>
-                            </div>
+
+                <div class="card">
+                    <img src="./img/weather.png" alt="Weather Search" class="card_picture">
+                    <h4 class="card_heading">
+                        <span class="card_heading-span">Weather App</span>
+                    </h4>
+                    <div class="card_description-container">
+                        <p class="card_description">
+                            React app that allows a user to search for the weather in any city in Canada and uses Redux for state management. Uses two APIs, google maps for displaying a map of the city and the openweathermap for getting the weather of the qeuried city. This app
+                            also displays the weather in a graph format.
+                        </p>
+                    </div>
+                    <div class="card_project-links">
+                        <div class="card_project-links-box">
+                            <p class="card_link-text">Github</p>
+                            <a href="https://github.com/jdelongs/react-weather-app" target="_blank" class="social_links">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
-                        <div class="card_side card_side-back card_side-back-3">
-                            <div class="card_cta">
-                                <div class="card_link-box">
-                                    <p class="card_link-text">Github</p>
-                                    <a href="https://github.com/jdelongs/budget-tracking" target="_blank" class="social_links">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/realtor.JPG" alt="Realtor Grid Site" class="card_picture">
+                    <h4 class="card_heading">
+                        <span class="card_heading-span">Realtor Grid</span>
+                    </h4>
+                    <div class="card_description-container">
+                        <p class="card_description">
+                            A one page HTML and SCSS site for showing highend homes for sale. This site uses exclusivly CSS Grid for layout.
+                        </p>
+                    </div>
+                    <div class="card_project-links">
+                        <div class="card_project-links-box">
+                            <p class="card_link-text">Github</p>
+                            <a href="https://github.com/jdelongs/housing" target="_blank" class="social_links"><i
+                                            class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/travel.JPG" alt="Travel Flexbox site" class="card_picture">
+                    <h4 class="card_heading">
+                        <span class="card_heading-span">Travel Flex</span>
+                    </h4>
+                    <div class="card_description-container">
+                        <p class="card_description">
+                            A one page HTML and SCSS site that is a template for booking and rating vocation spots. This site uses Flexbox for layout.
+                        </p>
+                    </div>
+                    <div class="card_project-links">
+                        <div class="card_project-links-box">
+                            <p class="card_link-text">Github</p>
+                            <a href="https://github.com/jdelongs/flex-vacation-site" target="_blank" class="social_links"><i
+                                            class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/youtube-api.JPG" alt="Travel Flexbox site" class="card_picture">
+                    <h4 class="card_heading">
+                        <span class="card_heading-span">YouTube API Search</span>
+                    </h4>
+                    <div class="card_description-container">
+                        <p class="card_description">
+                            This is a React app that allows you to search for Videos posted and a list of suggested videos on youtube by leveraging Youtubes API.
+                        </p>
+                    </div>
+                    <div class="card_project-links">
+                        <div class="card_project-links-box">
+                            <p class="card_link-text">Github</p>
+                            <a href="https://github.com/jdelongs/youtube-apiv2" target="_blank" class="social_links">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </section>
-        <section id="contact-form" class="contact-form">
-            <h2 class="section_heading text_white">Contact Me</h2>
-            <form action="https://formspree.io/jdelong11@outlook.com" method="post">
-                <div class="contact-form_container">
-                    <input id="name" placeholder="Name" name="name" type="text" class="contact-form_input" />
-                    <input id="email" placeholder="Email" name="from" type="text" class="contact-form_input" />
-                    <textarea class="contact-form_input" name="body" placeholder="Message..." ame="textarea_message" id="" cols="30" rows="10"></textarea>
-                    <button type="submit" name="submit" class="btn btn_primary">Send</button>
-                </div>
-            </form>
-        </section>
-    </main>
+        </div>
+    </section>
+    <!-- end of project section -->
+    <!-- start of contact me section -->
+    <section id="contact-form" class="contact-form">
+        <h2 class="section_heading text_white margin-left">Contact Me</h2>
+        <form action="https://formspree.io/jdelong11@outlook.com" method="post">
+            <div class="contact-form_container">
+                <input id="name" placeholder="Name" name="name" type="text" class="contact-form_input" />
+                <input id="email" placeholder="Email" name="from" type="text" class="contact-form_input" />
+                <textarea class="contact-form_input" name="body" placeholder="Message..." ame="textarea_message" id="" cols="30" rows="10"></textarea>
+                <button type="submit" name="submit" class="btn btn_primary">Send</button>
+            </div>
+        </form>
+    </section>
+    <!-- end of contact me section -->
+    <!-- start of footer -->
     <footer>
         <div class="footer_container">
-            <p class="footer_copywright-text">&copy; John Delong 2019</p>
+            <p class="footer_copywright-text">&copy; John Delong 2019-2020</p>
             <h4>Social Links</h4>
             <div class="social_container footer_social-container">
                 <a href="https://github.com/jdelongs" target="_blank" class="social_links"><i
@@ -212,6 +254,7 @@
             </div>
         </div>
     </footer>
+    <!-- end of footer -->
     <script src="./js/scripts.js"></script>
 </body>
 
