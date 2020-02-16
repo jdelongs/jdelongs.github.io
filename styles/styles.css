@@ -219,6 +219,7 @@ body {
 }
 
 .logo {
+    cursor: pointer;
     height: 5.5rem;
 }
 
@@ -475,7 +476,6 @@ ul.borderXwidth a:hover:after {
 
 .skills {
     background: rgb(51, 102, 153);
-    text-align: left;
     color: white;
     grid-column: 1 / span 10;
 }
@@ -700,6 +700,10 @@ only screen and (hover: none) {
     .row {
         grid-template-columns: 1fr;
     }
+    .section_heading {
+        margin-left: 0rem;
+        text-align: center;
+    }
     .card {
         grid-template-rows: 45vw min-content 1fr minmax(max-content, 23rem);
     }
@@ -707,7 +711,6 @@ only screen and (hover: none) {
 
 @media only screen and (max-width: 550px),
 only screen and (hover: none) {
-    /* nav responsive styles */
     .logo {
         margin-top: 1rem;
     }
@@ -715,7 +718,6 @@ only screen and (hover: none) {
     ul.borderXwidth a:after {
         position: static;
     }
-    /* header responsive styles */
     .navigation {
         display: none;
     }

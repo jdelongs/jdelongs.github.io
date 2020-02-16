@@ -2,6 +2,19 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158617860-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158617860-1');
+    </script>
+
     <meta charset="utf8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700,900" rel="stylesheet">
@@ -23,7 +36,7 @@
     <header class="header" id="header">
         <!-- start of desktop nav -->
         <nav class="navigation" id="navigation">
-            <img src="./img/logo.png" class="logo">
+            <a href="#"> <img src="./img/logo.png" class="logo"></a>
             <ul class="navigation_list borderXwidth">
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -31,14 +44,15 @@
             </ul>
         </nav>
         <!-- end of desktop nav -->
-        <!-- start of mobile nav -->
+        <!-- start of mogit mobile nav -->
         <div class="nav-mobile">
             <input type="checkbox" class="nav-mobile_checkbox" id="nav-mobile_checkbox">
             <label for="nav-mobile_checkbox" class="nav-mobile_btn">
                 <span class="nav-mobile_icon">&nbsp;</span>
             </label>
             <div class="nav-mobile_background">
-                <img src="./img/logo.png" class="logo">&nbsp;</div>
+                <a href="#"> <img src="./img/logo.png" class="logo" /></a>
+            </div>
             <nav class="nav-mobile_nav" id="nav-mobile_nav">
                 <ul class="nav-mobile_list" id="nav-mobile_list">
                     <li class="nav-mobile_item"><a href="#skills" class="nav-mobile_link">Skills</a></li>
@@ -71,15 +85,15 @@
         <div class="skills_container">
             <div class="skills_box">
                 <img src="./img/front-end.png" class="skills_paragraph-icon" alt="Front End Icon">
-                <h3 class="skills_title">FrontEnd Development</h3>
+                <h3 class="skills_title">Frontend Development</h3>
                 <p class="skills_text">
-                    Frontend development has been my main focus and passion. I have experience developing projects in Vanilla Javascript, React with Redux(React is my focus), Angular, and using both CSS and SASS for styling. I also have experience creating responsive sites
+                    Frontend development has been my main focus and passion. I have experience developing projects in Vanilla Javascript, React with Redux(React is my focus), Angular, and using both CSS and SCSS for styling. I also have experience creating responsive sites
                     with Flexbox, CSS grid, and Float layouts.
                 </p>
             </div>
             <div class="skills_box">
                 <img src="./img/backend.png" class="skills_paragraph-icon" alt="Back End Icon">
-                <h3 class="skills_title">BackEnd & Databases</h3>
+                <h3 class="skills_title">Backend & Databases</h3>
                 <p class="skills_text">
                     Development experience building RESTapis with Node and Express. Solid OOP foundation and Java application development with JavaFX and experience unit testing with Junit. Practical knowledge integrating MongoDB and MySQL in a variety of applications as
                     well as developing optimized MySQL queries.
